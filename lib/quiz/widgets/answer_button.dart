@@ -22,7 +22,10 @@ class AnswerButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      child: Image.asset('assets/images/quiz.png'),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Image.asset('assets/images/quiz.png'),
+      ),
     );
   }
 }

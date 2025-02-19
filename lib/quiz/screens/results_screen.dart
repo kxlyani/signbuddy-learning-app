@@ -10,8 +10,8 @@ class ResultsScreen extends StatelessWidget {
   final List<Image> chosenAnswers;
   final void Function() restartQuiz;
 
-  List<Map<String, Object>> get summaryData {
-    final List<Map<String, Object>> summary = [];
+  List<Map<Object, Object>> get summaryData {
+    final List<Map<Object, Object>> summary = [];
 
     for (var i = 0; i < chosenAnswers.length; i++) {
       summary.add(

@@ -54,7 +54,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                       answerQuestion(answer);
                     },
                   ),
-                  const SizedBox(height: 15), // Add spacing here
+                  const SizedBox(height: 20), // Add spacing here
                 ],
               );
             }),

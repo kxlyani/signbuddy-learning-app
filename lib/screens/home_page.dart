@@ -8,12 +8,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // appBar: AppBar(
+      //   title: Text('sampel title'),
+      // ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
               Color.fromARGB(255, 112, 168, 232),
-                Color.fromARGB(255, 33, 117, 143)
+              Color.fromARGB(255, 33, 117, 143)
             ],
           ),
         ),

@@ -6,7 +6,7 @@ import 'package:signbuddy/quiz/questions_summary/question_identifier.dart';
 class SummaryItem extends StatelessWidget {
   const SummaryItem({super.key, required this.data});
 
-  final Map<String, Object> data;
+  final Map<Object, Object> data;
 
   @override
   Widget build(context) {
@@ -33,16 +33,30 @@ class SummaryItem extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 5,
+                    height: 10,
                   ),
                   Text(
-                    data['user_answer'] as String,
+                    'Your answer :',
                     style: GoogleFonts.lancelot(
                         color: const Color.fromARGB(255, 7, 44, 76)),
                   ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  data['user_answer'] as Image,
+                  const SizedBox(
+                    height: 5,
+                  ),
                   Text(
-                    data['correct_answer'] as String,
+                    'Correct answer: ',
                     style: GoogleFonts.lancelot(color: Colors.greenAccent),
+                  ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  data['correct_answer'] as Image,
+                  const SizedBox(
+                    height: 10,
                   ),
                 ],
               ),
